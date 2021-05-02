@@ -2,9 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,700&display=swap");
 
-@import "_variables";
-@import "modules/hello.scss";
-@import "modules/header.scss";
+//@import "_variables";
+//@import "modules/hello.scss";
+//@import "modules/header.scss";
 
 @import "abstracts/functions";
 @import "abstracts/mixins";
@@ -17,6 +17,7 @@
 
 @import "components/button";
 
+@import "layout/grid";
 @import "layout/header.scss";
 
 @import "pages/home";
