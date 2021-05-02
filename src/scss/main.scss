@@ -15,24 +15,8 @@
 @import "base/typography";
 @import "base/utillities";
 
+@import "components/button";
+
+@import "layout/header.scss";
+
 @import "pages/home";
-
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-size: 62.5%;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: $text;
-  padding: 3rem;
-}
