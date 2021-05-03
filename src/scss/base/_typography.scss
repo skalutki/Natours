@@ -6,7 +6,7 @@ body {
   padding: 3rem;
 }
 
-.heading__primarry {
+.heading__primary {
   color: $white;
   text-transform: uppercase;
   backface-visibility: hidden;
@@ -26,5 +26,36 @@ body {
     font-weight: 700;
     letter-spacing: 1.74rem;
     animation: moveInRight 1s ease-out;
+  }
+}
+
+.heading__secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $lightGreen, $darkGreen);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($shadowBlack, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $defaultFontSize;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $defaultFontSize;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }
