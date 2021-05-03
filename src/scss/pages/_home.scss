@@ -3,3 +3,16 @@
   padding: 25rem 0;
   margin-top: -20vh;
 }
+
+.features {
+  padding: 20rem 0;
+  margin-top: -20vh;
+  background-image: linear-gradient(to right bottom, rgba($lightGreen, 0.8), rgba($darkGreen, 0.8)), url("../assets/img/nat-4.jpg");
+  background-size: cover;
+  transform: skewy(-7deg);
+  margin-top: -10rem;
+
+  & > * {
+    transform: skewy(7deg);
+  }
+}
