@@ -33,6 +33,14 @@
     }
   }
 
+  &--green {
+    background-color: $darkGreen;
+    color: $white;
+    &::after {
+      background-color: $darkGreen;
+    }
+  }
+
   &::after {
     content: "";
     display: inline-block;
