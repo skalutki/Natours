@@ -20,6 +20,36 @@
   </head>
 
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>01</span>Natours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>02</span>Your benefits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>03</span>Popular tours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Book now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <img src="../assets/img/logo-white.png" class="header__logo" alt="Logo" />
@@ -29,7 +59,7 @@
           <span class="heading__primarry--main">OUTDOORS</span>
           <span class="heading__primarry--sub">IS WHERE LIFE HAPPENS</span>
         </h1>
-        <a class="button button--white button--animated" href="#">Discover our tours</a>
+        <a class="button button--white button--animated" href="#tours">Discover our tours</a>
       </div>
     </header>
 
@@ -102,7 +132,7 @@
         </div>
       </section>
 
-      <section class="tours">
+      <section class="tours" id="tours">
         <div class="u_center_text u_margin_bottom_big">
           <h2 class="heading__secondary">Most popular tours</h2>
         </div>
@@ -131,7 +161,7 @@
                     <p class="card__price-only">only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="button button--white">Book now!</a>
+                  <a href="#popup" class="button button--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -160,7 +190,7 @@
                     <p class="card__price-only">only</p>
                     <p class="card__price-value">$479</p>
                   </div>
-                  <a href="#" class="button button--white">Book now!</a>
+                  <a href="#popup" class="button button--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -189,7 +219,7 @@
                     <p class="card__price-only">only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="#" class="button button--white">Book now!</a>
+                  <a href="#popup" class="button button--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -331,6 +361,33 @@
         </div>
       </div>
     </footer>
+
+    <section class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="../assets/img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="../assets/img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+
+        <div class="popup__right">  
+          
+          <a href="#tours" class="popup__close">&times;</a>
+          
+          <h2 class="heading__secondary u_margin_bottom_small">Start booking now</h2>
+          <h3 class="heading-tertiary u_margin_bottom_small">Important &ndash; Please read these terms before booking</h2>
+            <div class="popup__text">
+              Lorem ipsum dolor sit amet, id discere diceret signiferumque mel, in summo aperiri pro. Sea ei labore delenit ancillae, 
+              id sea esse malis vocent. Et fugit latine vel. Facete mollis ne quo, ornatus percipit urbanitas te pro. 
+              Est an aperiam delectus consulatu. No vel aperiam phaedrum. Everti epicurei antiopam pri eu, quas petentium nec at, 
+              hinc ullum sadipscing ea ius. Et fugit latine vel. Facete mollis ne quo, ornatus percipit urbanitas te pro. 
+              Est an aperiam delectus consulatu. No vel aperiam phaedrum. Everti epicurei antiopam pri eu, quas petentium nec at, 
+              hinc ullum sadipscing ea ius.
+            </div>
+          
+            <a href="#" class="button button--green">Book now</a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
 <!--
