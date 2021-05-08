@@ -9,10 +9,17 @@
   opacity: 0;
   visibility: hidden;
 
+  //OPEN STATES
+
   &:target {
     opacity: 1;
     visibility: visible;
     transition: all 0.3s;
+  }
+
+  &:target &__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
   }
 
   &__close {
@@ -25,6 +32,12 @@
       font-size: 3rem;
       text-decoration: none;
       display: inline-block;
+      transition: all 0.2s;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: $mediumGreen;
     }
   }
 
@@ -37,6 +50,9 @@
     border-radius: 3px;
     display: table;
     overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.5s 0.2s;
   }
 
   &__left {
