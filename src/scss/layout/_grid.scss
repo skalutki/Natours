@@ -2,8 +2,17 @@
   max-width: $gridWidth;
   margin: 0 auto;
 
+  @include respond(tabPort) {
+    max-width: 50rem; //nie jestem pewien czy to tak powinno wygladac.
+    padding: 0 3rem;
+  }
+
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tabPort) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
 
   @include clearfix;
@@ -13,6 +22,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontial;
+
+      @include respond(tabPort) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respond(tabPort) {
+      width: 100% !important;
     }
   }
 
