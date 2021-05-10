@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   @include respond(tabPort) {
-    max-width: 50rem; //nie jestem pewien czy to tak powinno wygladac.
+    max-width: 52rem; //nie jestem pewien czy to tak powinno wygladac.
     padding: 0 3rem;
   }
 
