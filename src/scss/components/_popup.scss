@@ -34,6 +34,11 @@
       display: inline-block;
       transition: all 0.2s;
       line-height: 1;
+
+      @include respond(tabPort) {
+        top: 0.5rem;
+        right: 0.5rem;
+      }
     }
 
     &:hover {
@@ -53,11 +58,28 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
+
+    @include respond(tabPort) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__left {
     width: 33.333333%;
     display: table-cell;
+
+    @include respond(tabPort) {
+      width: 48%;
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      align-items: stretch;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__right {
@@ -65,6 +87,10 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tabPort) {
+      width: 100%;
+    }
   }
 
   &__img {
@@ -88,5 +114,15 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(tabPort) {
+      -moz-column-count: 1;
+      -moz-column-gap: 0;
+      -moz-column-rule: 0;
+
+      column-count: 1;
+      column-gap: 0;
+      column-rule: 0;
+    }
   }
 }
