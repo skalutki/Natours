@@ -41,12 +41,18 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, $lightGreen, $darkGreen);
+  background-color: $darkGreen;
   display: inline-block;
-  -webkit-background-clip: text;
+
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2;
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, $lightGreen, $darkGreen);
+  }
 
   @include respond(tabPort) {
     font-size: 3rem;

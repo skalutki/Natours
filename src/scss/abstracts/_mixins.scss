@@ -36,28 +36,28 @@ ORDER: base + typography > general layout + grid > components   || kolejnosc dzi
 
 @mixin respond($brakepoint) {
   @if $brakepoint == phone {
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       //600px
       @content;
     }
   }
 
   @if $brakepoint == tabPort {
-    @media (max-width: 56.26em) {
+    @media only screen and (max-width: 56.26em) {
       //900px
       @content;
     }
   }
 
   @if $brakepoint == tabLand {
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       //1200px
       @content;
     }
   }
 
   @if $brakepoint == bigDeskop {
-    @media (min-width: 112.5em) {
+    @media only screen and (min-width: 112.5em) {
       //1800px and bigger
       @content;
     }

@@ -8,13 +8,19 @@
   z-index: 3000;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.3s;
+
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color: $shadowBlack, $alpha: 0.3);
+  }
 
   //OPEN STATES
 
   &:target {
     opacity: 1;
     visibility: visible;
-    transition: all 0.3s;
   }
 
   &:target &__content {
