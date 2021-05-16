@@ -1,4 +1,4 @@
-![cover](https://skalutki.github.io/Natours/public/og.png)
+![cover](public/og.png)
 
 # NATOURS
 
